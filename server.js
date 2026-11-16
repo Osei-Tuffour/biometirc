@@ -5,7 +5,7 @@ const CryptoJS = require('crypto-js');
 const app = express();
 app.use(express.urlencoded({ extended: false }));
 
-const TARGET = 'https://lawson12.site.je/atta/biometric_attendance.php';
+const TARGET = 'https://lawson12.site.je/fast/biometric_attendance.php';
 let cookieCache = { value: null, expires: 0 };
 
 // Solve InfinityFree's slowAES challenge
