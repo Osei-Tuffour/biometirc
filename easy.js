@@ -5,7 +5,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 
 // Replace with your actual InfinityFree endpoint
-const TARGET_URL = 'https://lawson12.site.je/atta/biometric_attendance.php';
+const TARGET_URL = 'https://lawson12.site.je/fast/biometric_attendance.php';
 
 // Create a client that automatically handles the JS challenge
 const client = createAxiosClient({
@@ -16,7 +16,7 @@ const client = createAxiosClient({
 // Forward all POST requests from the ESP32 to InfinityFree
 app.post('/', async (req, res) => {
   try {
-    const response = await client.post('/atta/biometric_attendance.php', req.body);
+    const response = await client.post('/fast/biometric_attendance.php', req.body);
     res.send(response.data);
   } catch (error) {
     console.error('Relay error:', error.message);
