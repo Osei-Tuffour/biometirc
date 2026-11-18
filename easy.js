@@ -5,11 +5,11 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 
 // Replace with your actual InfinityFree endpoint
-const TARGET_URL = 'https://lawson12.site.je/fast/biometric_attendance.php';
+const TARGET_URL = 'https://lawsonhr26.fwh.is/fast/biometric_attendance.php';
 
 // Create a client that automatically handles the JS challenge
 const client = createAxiosClient({
-  baseURL: 'https://lawson12.site.je',
+  baseURL: 'https://lawsonhr26.fwh.is',
   timeout: 10000,
 });
 
